@@ -1,0 +1,53 @@
+/* ------------------- Header et navbar ------------------- */
+
+header {
+    width: 100%;
+    top: 0;
+}
+
+.ligneHeader { /*navbar*/
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ff9400;
+}
+
+.navLien li, .navLien2 li, .buttonContact li { /*apparence des puces et contours*/
+    list-style-type: none;
+    align-items: center;
+    padding: 3px 5px;
+    font-size: 90%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navLien a:hover, .navLien2 a:hover, .buttonContact a:hover { /*apparence des liens, hover pour l'animation*/
+    color: rgb(88, 98, 156);
+}
+
+a { /*retirer les effets des liens bleus de base */
+    text-decoration: none;
+    color: white;
+}
+
+  footer {
+    background-color: #5b5b5b;
+}
+
+/* ------------------- Infos du body et main our que la navbar du header et le footer ne bouge pas  ------------------- */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: auto;
+}
+
+/* ------------------- Accueil.html ------------------- */
